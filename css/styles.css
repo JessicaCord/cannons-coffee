@@ -84,8 +84,6 @@ header img {
 }
 
 header h1 {
-    font-size: 1.75rem;
-    max-width: 220px;
     margin: 10px auto;
 }
 
@@ -102,16 +100,11 @@ nav a {
     color: var(--white);
     text-decoration: none;
     text-transform: uppercase;
-    font-size: 0.75rem;
 }
 
 /* ___________________________________________________________ */
 /* Tablet */
 @media (min-width: 650px) {
-    body {
-        font-size: 16px;
-    }
-
     header {
         display: flex;
         flex-wrap: wrap;
@@ -128,7 +121,6 @@ nav a {
     }
 
     header h1 {
-        font-size: 2rem;
         max-width: none;
         margin: 0;
         white-space: nowrap;
@@ -140,18 +132,10 @@ nav a {
         margin: 0;
         gap: 20px;
     }
-
-    nav a {
-        font-size: 1rem;
-    }
 }
 /* ___________________________________________________________ */
 /* Desktop */
 @media (min-width: 1000px) {
-    body {
-        font-size: 18px;
-    }
-
     header {
         flex-wrap: nowrap;
         justify-content: space-between;
@@ -163,19 +147,10 @@ nav a {
         width: 75px;
     }
 
-    header h1 {
-        font-size: 2rem;
-        white-space: nowrap;
-    }
-
     nav {
         width: auto;
         flex-wrap: nowrap;
         margin-left: auto;
         gap: 15px;
-    }
-
-    nav a {
-        font-size: 0.75rem;
     }
 }
