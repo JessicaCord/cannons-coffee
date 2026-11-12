@@ -58,32 +58,36 @@ h3 {
     margin: 0 auto;
 }
 
-/* ___________________________________________________________ */
-/* Mobile (max-width: 649px) */
+/* ___Mobile (max-width: 649px)____________________________ */
 header {
     background-color: var(--Catalina);
     color: var(--white);
     text-align: center;
-    padding: 20px;
+    padding: 25px 20px;
+    border-bottom: 4px solid var(--Sunglow);
 }
 
 header img {
     display: block;
-    width: 70px;
+    width: 150px;
     margin: 0 auto;
 }
 
-h1 {
-    max-width: 220px;
-    margin: 10px auto;
+header h1 {
+    max-width: 100%;
+    margin: 15px auto 25px;
+}
+
+h3 {
+    font-weight: bold;
 }
 
 nav {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    gap: 10px;
-    max-width: 220px;
+    gap: 15px;
+    max-width: 100%;
     margin: 0 auto;
 }
 
@@ -96,7 +100,6 @@ nav a {
 .opening {
     background-color: var(--white);
     padding: 35px 20px;
-    border-top: 5px solid var(--Sunglow);
 }
 
 .opening img {
@@ -105,7 +108,11 @@ nav a {
     height: auto;
 }
 
-h2 {
+.opening-text {
+    min-width: 0;
+}
+
+.opening h2 {
     margin: 25px 0;
 }
 
@@ -120,11 +127,56 @@ h2 {
     border-radius: 8px;
     text-decoration: none;
     text-transform: uppercase;
-    padding: 4px 12px;
+    padding: 8px 15px;
 }
 
-/* _________________________________________________ */
-/* Tablet */
+.ourcoffee {
+    background-color: var(--LightBlue);
+    padding: 35px 20px;
+    border-bottom: 4px solid var(--Sunglow);
+}
+
+.ourcoffee h2 {
+    margin: 15px 0 35px;
+}
+
+.coffee-items {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.coffee-item {
+    min-width: 0;
+}
+
+.coffee-item h3 {
+    margin: 15px 0;
+}
+
+.coffee-item img {
+    display: block;
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+
+.coffee-item p {
+    font-size: 1rem;
+    line-height: 1.5;
+}
+
+.button1 {
+    display: inline-block;
+    background-color: var(--Catalina);
+    color: var(--white);
+    border-radius: 8px;
+    text-decoration: none;
+    text-transform: uppercase;
+    padding: 8px 12px;
+}
+
+/* ___Tablet________________________________ */
 @media (min-width: 650px) {
     header {
         display: flex;
@@ -154,55 +206,92 @@ h2 {
         gap: 20px;
     }
 
-.opening {
-   display: flex;
-    align-items: stretch;
-    gap: 0;
-    padding: 0;
+    .opening {
+        display: flex;
+        padding: 0;
+    }
+
+    .opening img {
+        width: 50%;
+    }
+
+    .opening-text {
+        padding: 20px;
+    }
+
+    .coffee-items {
+        flex-direction: row;
+        flex-wrap: wrap;
+        gap: 30px 20px;
+    }
+
+    .coffee-item {
+        flex: 0 0 calc((100% - 20px) / 2);
+    }
 }
 
-.opening img {
-    width: 50%;
-    height: auto;
-}
-
-.opening-text {
-    min-width: 0;
-    padding: 20px 15px;
-}
-
-/* _________________________________________________ */
-/* Desktop */
+/* ___Desktop_______________________________________________ */
 @media (min-width: 1000px) {
     header {
         max-width: 900px;
         margin: 0 auto;
+        display: flex;
         flex-wrap: nowrap;
+        align-items: flex-end;
         justify-content: space-between;
-    }
-
-    header img {
-        width: 75px;
+        gap: 10px;
+        padding: 15px 10px;
     }
 
     nav {
         width: auto;
         flex-wrap: nowrap;
         margin-left: auto;
+        gap: 10px;
     }
 
+    nav a {
+        font-size: 0.75rem;
+    }
+    
     .opening {
-    max-width: 900px;
+        max-width: 900px;
         margin: 0 auto;
+        display: flex;
         align-items: stretch;
     }
 
     .opening-text {
-        flex: 1;
-        padding: 20px 15px;
         display: flex;
         flex-direction: column;
         align-items: flex-start;
         justify-content: center;
+    }
+
+    .ourcoffee {
+        max-width: 900px;
+        margin: 0 auto;
+
+    }
+
+    .coffee-items {
+        display: flex;
+        flex-direction: row;
+    }
+
+    .coffee-item {
+        flex: 1;
+    }
+
+    .coffee-item h3 {
+        font-size: 1.50rem;
+    }
+
+    .coffee-item img {
+        height: 135px;
+    }
+
+    .coffee-item .button1 {
+        font-size: 0.70rem;
     }
 }
