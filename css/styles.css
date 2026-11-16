@@ -58,11 +58,6 @@ h3 {
     margin: 0 auto;
 }
 
-.late {
-    border-top: 4px solid var(--Sunglow);
-}
-
-
 /* ___Mobile (max-width: 649px)____________________________ */
 header {
     background-color: var(--Catalina);
@@ -200,6 +195,10 @@ footer p {
     margin-top: 15px;
 }
 
+/* .mylat {
+        width: 100%;
+        border-bottom: 4px solid var(--Sunglow);
+    } */
 
 /* ___Tablet________________________________ */
 @media (min-width: 650px) {
@@ -256,6 +255,11 @@ footer p {
 
     footer img {
         width: 200px;
+    }
+
+    .mylat {
+        width: 100%;
+        border-bottom: 4px solid var(--Sunglow);
     }
 }
 
