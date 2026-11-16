@@ -58,6 +58,11 @@ h3 {
     margin: 0 auto;
 }
 
+.late {
+    border-top: 4px solid var(--Sunglow);
+}
+
+
 /* ___Mobile (max-width: 649px)____________________________ */
 header {
     background-color: var(--Catalina);
@@ -176,6 +181,26 @@ nav a {
     padding: 8px 12px;
 }
 
+footer {
+    text-align: center;
+    padding: 25px 20px;
+}
+
+footer img {
+    display: block;
+    width: 180px;
+    max-width: 100%;
+    height: auto;
+    margin: 0 auto;
+}
+
+footer p {
+    color: var(--white);
+    font-size: 0.75rem;
+    margin-top: 15px;
+}
+
+
 /* ___Tablet________________________________ */
 @media (min-width: 650px) {
     header {
@@ -227,6 +252,10 @@ nav a {
 
     .coffee-item {
         flex: 0 0 calc((100% - 20px) / 2);
+    }
+
+    footer img {
+        width: 200px;
     }
 }
 
@@ -293,5 +322,14 @@ nav a {
 
     .coffee-item .button1 {
         font-size: 0.70rem;
+    }
+
+    footer {
+        text-align: center;
+        padding: 25px 20px;
+    }
+
+    footer img {
+        width: 200px;
     }
 }
