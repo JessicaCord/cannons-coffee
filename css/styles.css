@@ -11,6 +11,8 @@
   --line-height: 1.1667;
   --font-weight: 300;
   --text-transform: uppercase;
+  --font-family: "Montserrat", sans-serif;
+  --background: #063270;
 }
 
 html {
@@ -24,12 +26,12 @@ html {
 }
 
 body {
-  color: var(--black);
-  background-color: #063270;
-  font-family: "Montserrat", sans-serif;
-  font-size: 1.125rem;
-  line-height: 1.5;
-  margin: 0;
+    color: var(--black);
+    background-color: var(--background);
+    font-family: var(--font-family);
+    font-size: 1.125rem;
+    line-height: 1.5;
+    margin: 0;
 }
 
 h1 {
@@ -58,13 +60,34 @@ h3 {
     margin: 0 auto;
 }
 
+/* ____________________________________________________________________*/
+
+.button,
+.button1 {
+    display: inline-block;
+    color: var(--white);
+    border-radius: 8px;
+    text-decoration: none;
+    text-transform: var(--text-transform);
+}
+
+.button {
+    background-color: var(--Vegan);
+    padding: 8px 15px;
+}
+
+.button1 {
+    background-color: var(--Catalina);
+    padding: 8px 12px;
+}
+
 /* ___Mobile (max-width: 649px)____________________________ */
 header {
     background-color: var(--Catalina);
     color: var(--white);
     text-align: center;
-    padding: 25px 20px;
-    border-bottom: 4px solid var(--Sunglow);
+    padding: 20px 20px;
+    border-bottom: 5px solid var(--Sunglow);
 }
 
 header img {
@@ -75,11 +98,7 @@ header img {
 
 header h1 {
     max-width: 100%;
-    margin: 15px auto 25px;
-}
-
-h3 {
-    font-weight: bold;
+    margin: 15px 25px;
 }
 
 nav {
@@ -120,20 +139,10 @@ nav a {
     margin-bottom: 25px;
 }
 
-.button {
-    display: inline-block;
-    background-color: var(--Vegan);
-    color: var(--white);
-    border-radius: 8px;
-    text-decoration: none;
-    text-transform: uppercase;
-    padding: 8px 15px;
-}
-
 .ourcoffee {
     background-color: var(--LightBlue);
     padding: 35px 20px;
-    border-bottom: 4px solid var(--Sunglow);
+    border-bottom: 5px solid var(--Sunglow);
 }
 
 .ourcoffee h2 {
@@ -166,16 +175,6 @@ nav a {
     line-height: 1.5;
 }
 
-.button1 {
-    display: inline-block;
-    background-color: var(--Catalina);
-    color: var(--white);
-    border-radius: 8px;
-    text-decoration: none;
-    text-transform: uppercase;
-    padding: 8px 12px;
-}
-
 footer {
     text-align: center;
     padding: 25px 20px;
@@ -195,10 +194,10 @@ footer p {
     margin-top: 15px;
 }
 
-/* .mylat {
-        width: 100%;
-        border-bottom: 4px solid var(--Sunglow);
-    } */
+.late {
+    border-top: 5px solid var(--Sunglow);
+}
+
 
 /* ___Tablet________________________________ */
 @media (min-width: 650px) {
@@ -257,9 +256,8 @@ footer p {
         width: 200px;
     }
 
-    .mylat {
-        width: 100%;
-        border-bottom: 4px solid var(--Sunglow);
+    .late {
+        border-top: 5px solid var(--Sunglow);
     }
 }
 
@@ -304,7 +302,6 @@ footer p {
     .ourcoffee {
         max-width: 900px;
         margin: 0 auto;
-
     }
 
     .coffee-items {
@@ -316,16 +313,8 @@ footer p {
         flex: 1;
     }
 
-    .coffee-item h3 {
-        font-size: 1.50rem;
-    }
-
     .coffee-item img {
         height: 135px;
-    }
-
-    .coffee-item .button1 {
-        font-size: 0.70rem;
     }
 
     footer {
@@ -336,4 +325,9 @@ footer p {
     footer img {
         width: 200px;
     }
+
+    /* .late {
+        border-top: 5px solid var(--Sunglow);
+    } */
+    
 }
